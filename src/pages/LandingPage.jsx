@@ -2,8 +2,8 @@ import NasaImage from '../assets/images/nasa.png';
 import PresentedByImage from '../assets/images/presented-by.png';
 import YearOnPsycheImage from '../assets/images/year-on-psyche.png';
 import SpaceAnimation from '../assets/animations/space-animation.mp4';
-import InstructionsButton from '../components/InstructionsButton';
-import EnterButton from '../components/EnterButton';
+import InstructionsButton from '../components/buttons/InstructionsButton';
+import EnterButton from '../components/buttons/EnterButton';
 
 function LandingPage() {
     return (
