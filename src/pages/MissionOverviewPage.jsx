@@ -2,6 +2,8 @@ import Topbar from '../components/Topbar';
 import Carousel from '../components/Carousel'
 import Background from '../assets/images/space_bg_3.jpg';
 import Fact_Card_1 from '../assets/images/fact_cards/mo_fc_1.png';
+import Fact_Card_2 from '../assets/images/fact_cards/mo_fc_2.png';
+import Fact_Card_3 from '../assets/images/fact_cards/mo_fc_3.png';
 
 function MissionOverViewPage() {
     return (
@@ -27,8 +29,8 @@ function MissionOverViewPage() {
                     <Carousel>
                     {/* <img src="https://juazeiro.gteducacao.com.br/assets/images/samples/300x300/1.jpg" alt="Slide 1" className="w-full h-full object-cover" /> */}
                     <img src={Fact_Card_1} alt="Slide 1" className="w-full h-full object-cover" />
-                    <img src="https://juazeiro.gteducacao.com.br/assets/images/samples/300x300/2.jpg" alt="Slide 2" className="w-full h-full object-cover" />
-                    <img src="https://juazeiro.gteducacao.com.br/assets/images/samples/300x300/3.jpg" alt="Slide 3" className="w-full h-full object-cover" />
+                    <img src={Fact_Card_2} alt="Slide 2" className="w-full h-full object-cover" />
+                    <img src={Fact_Card_3} alt="Slide 3" className="w-full h-full object-cover" />
                     </Carousel>
                     
                 </div>
