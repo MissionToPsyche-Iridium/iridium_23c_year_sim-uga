@@ -14,8 +14,11 @@ function Sidebar({ isOpen, onClose }) {
                 isOpen ? 'translate-x-0' : 'translate-x-full'
             }`}
         >
-            <button onClick={onClose}>
-                <img src={closeIcon} className="h-7 p-2 invert"></img>
+            <button
+                onClick={onClose}
+                className="p-2 text-white text-md hover:text-gray-300 transition"
+            >
+                X
             </button>
             <hr className="border-t border-white w-full" />
             <div className="space-y-6">
