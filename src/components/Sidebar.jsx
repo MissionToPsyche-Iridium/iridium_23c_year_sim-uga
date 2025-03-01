@@ -10,7 +10,7 @@ import closeIcon from '../assets/icons/close.png';
 function Sidebar({ isOpen, onClose }) {
     return (
         <div
-            className={`fixed top-0 right-0 z-50 h-full w-64 bg-gray-800 text-white transition-transform duration-300 ${
+            className={`fixed top-0 right-0 z-50 h-full w-64 bg-gray-700 text-white transition-transform duration-300 ${
                 isOpen ? 'translate-x-0' : 'translate-x-full'
             }`}
         >

@@ -1,10 +1,11 @@
 import Topbar from '../components/Topbar';
+import PsycheChatbot from '../components/PsycheChatbot';
 
 function ChatbotPage() {
     return (
         <div>
             <Topbar></Topbar>
-            <h1>Chatbot</h1>
+            <PsycheChatbot></PsycheChatbot>
         </div>
     );
 }
