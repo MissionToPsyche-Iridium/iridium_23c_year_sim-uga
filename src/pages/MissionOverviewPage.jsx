@@ -1,42 +1,182 @@
-import Topbar from '../components/Topbar';
-import Carousel from '../components/Carousel'
-import Background from '../assets/images/space_bg_3.jpg';
-import Fact_Card_1 from '../assets/images/fact_cards/mo_fc_1.png';
-import Fact_Card_2 from '../assets/images/fact_cards/mo_fc_2.png';
-import Fact_Card_3 from '../assets/images/fact_cards/mo_fc_3.png';
+import Topbar from '../components/util/Topbar';
 
-function MissionOverViewPage() {
+function MissionOverviewPage() {
     return (
-        // Outer container, this takes the full viewport height and hides the overflow
-        // <div className="h-screen overflow-hidden flex flex-col">
-        <div
-            className="h-screen flex flex-col bg-cover bg-center"
-            style={{
-                backgroundImage: `url(${Background})`,
-                backgroundSize: "cover",       // Makes the image cover the entire area
-                backgroundRepeat: "no-repeat", // Prevents tiling
-                backgroundPosition: "center"   // Centers the image
-            }}
-        >
-            <Topbar></Topbar>
-            <hr className="border-t border-white w-full" />
-            <h1>Mission Overview</h1>
-            {/* This flex-grow container centers the carousel */}
-            <div className="flex-grow flex items-center justify-center">
-                {/* Responsive carousel container with a 3:4 aspect ratio */}
-                {/* <div className="w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/2 aspect-square"> */}
-                <div className="w-11/12 sm:w-3/4 md:w-2/3 lg:w-4/10 aspect-square">
-                    <Carousel>
-                    {/* <img src="https://juazeiro.gteducacao.com.br/assets/images/samples/300x300/1.jpg" alt="Slide 1" className="w-full h-full object-cover" /> */}
-                    <img src={Fact_Card_1} alt="Slide 1" className="w-full h-full object-cover" />
-                    <img src={Fact_Card_2} alt="Slide 2" className="w-full h-full object-cover" />
-                    <img src={Fact_Card_3} alt="Slide 3" className="w-full h-full object-cover" />
-                    </Carousel>
-                    
+        <div className="h-screen flex flex-col bg-gray-900 font-mono">
+            <Topbar />
+            <hr className="border-t border-gray-700 w-full" />
+
+            <main className="flex-1 overflow-y-auto p-8 space-y-12 text-gray-300">
+                {/* Hero Section */}
+                <div className="max-w-6xl mx-auto">
+                    <h1 className="text-4xl font-bold mb-6 text-white">
+                        Psyche Mission Overview
+                    </h1>
+
+                    {/* Overview Grid */}
+                    <div className="grid md:grid-cols-2 gap-8 mb-12">
+                        <div className="space-y-4">
+                            <h2 className="text-2xl font-semibold border-b border-gray-700 pb-2">
+                                Journey to a Metal World
+                            </h2>
+                            <p className="leading-relaxed">
+                                NASA's Psyche mission is humanity's first visit
+                                to a metal-rich asteroid, offering potentially
+                                unprecedented insights into planetary core
+                                formation. Targeting 16-Psyche in the main
+                                asteroid belt between Mars and Jupiter, this
+                                mission could also reveal secrets about the
+                                history of collisions and accretion that led to
+                                terrestrial planets.
+                            </p>
+                        </div>
+
+                        <div className="space-y-4">
+                            <h2 className="text-2xl font-semibold border-b border-gray-700 pb-2">
+                                Scientific Significance
+                            </h2>
+                            <p className="leading-relaxed">
+                                Psyche's estimated density of 3,400-4,100 kg/m³
+                                suggests a composition radically different from
+                                most stony asteroids. Additionally, its triaxial
+                                dimensions (278 × 238 × 171 km) make it one of
+                                the largest metallic bodies in the asteroid
+                                belt, potentially representing the exposed core
+                                of a primordial planetesimal.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Mission Objectives */}
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold mb-6 border-b border-gray-700 pb-2">
+                            Primary Objectives
+                        </h2>
+                        <ul className="grid gap-4 list-disc pl-6">
+                            <li>
+                                <span className="font-semibold">
+                                    Core Verification:
+                                </span>{' '}
+                                Determine if Psyche represents a planetary core
+                                or unmelted primordial material
+                            </li>
+                            <li>
+                                <span className="font-semibold">
+                                    Surface Chronology:
+                                </span>{' '}
+                                Establish relative ages of surface features
+                                through crater analysis
+                            </li>
+                            <li>
+                                <span className="font-semibold">
+                                    Geological Mapping:
+                                </span>{' '}
+                                Map morphology and topography at ≤200 m/pixel
+                                resolution
+                            </li>
+                            <li>
+                                <span className="font-semibold">
+                                    Composition Analysis:
+                                </span>{' '}
+                                Characterize bulk elemental composition and
+                                mineral phases
+                            </li>
+                            <li>
+                                <span className="font-semibold">
+                                    Magnetic Field Study:
+                                </span>{' '}
+                                Detect and analyze any remnant magnetic field
+                            </li>
+                        </ul>
+                    </section>
+
+                    {/* Timeline & Participants */}
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold mb-6 border-b border-gray-700 pb-2">
+                            Mission Profile
+                        </h2>
+                        <div className="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 className="text-xl font-semibold mb-4">
+                                    Key Dates
+                                </h3>
+                                <ul className="space-y-2">
+                                    <li>
+                                        • Launch: October 12, 2023 (Falcon
+                                        Heavy)
+                                    </li>
+                                    <li>• Mars Flyby: 2026 Gravity Assist</li>
+                                    <li>• Arrival at Psyche: August 2029</li>
+                                    <li>
+                                        • Prime Mission Conclusion: November
+                                        2031
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 className="text-xl font-semibold mb-4">
+                                    Collaborators
+                                </h3>
+                                <p className="leading-relaxed">
+                                    Led by JPL with ASU managing science
+                                    operations. Spacecraft chassis by Maxar
+                                    Technologies. Partners include MIT for
+                                    magnetometry, DTU for instrument design, and
+                                    JPL/Caltech for managing the DSOC technology
+                                    demonstration.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Instruments */}
+                    <section>
+                        <h2 className="text-3xl font-bold mb-6 border-b border-gray-700 pb-2">
+                            Scientific Payload
+                        </h2>
+                        <div className="grid md:grid-cols-2 gap-6">
+                            <div className="p-4 border border-gray-700 rounded-lg">
+                                <h3 className="text-xl font-semibold mb-2">
+                                    Multispectral Imager
+                                </h3>
+                                <p className="text-gray-400">
+                                    Dual-camera system for geological mapping
+                                    and composition analysis
+                                </p>
+                            </div>
+                            <div className="p-4 border border-gray-700 rounded-lg">
+                                <h3 className="text-xl font-semibold mb-2">
+                                    GRNS
+                                </h3>
+                                <p className="text-gray-400">
+                                    Gamma Ray and Neutron Spectrometer for
+                                    elemental detection
+                                </p>
+                            </div>
+                            <div className="p-4 border border-gray-700 rounded-lg">
+                                <h3 className="text-xl font-semibold mb-2">
+                                    Magnetometer
+                                </h3>
+                                <p className="text-gray-400">
+                                    High-sensitivity field detection (MIT/DTU
+                                    collaboration)
+                                </p>
+                            </div>
+                            <div className="p-4 border border-gray-700 rounded-lg">
+                                <h3 className="text-xl font-semibold mb-2">
+                                    DSOC
+                                </h3>
+                                <p className="text-gray-400">
+                                    Deep Space Optical Communications technology
+                                    demonstrator
+                                </p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-            </div>
+            </main>
         </div>
     );
 }
 
-export default MissionOverViewPage;
+export default MissionOverviewPage;
