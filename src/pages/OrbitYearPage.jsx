@@ -1,12 +1,19 @@
 import Topbar from '../components/util/Topbar';
+import OrbitYearScene from '../components/r3f/scenes/OrbitYearScene';
 
 function OrbitYearPage() {
     return (
-        <div className="h-screen flex flex-col bg-gray-900 font-mono">
+        <div className="flex flex-col bg-gray-900 font-mono">
             <Topbar />
             <hr className="border-t border-gray-700 w-full" />
 
-            <main className="flex-1 overflow-y-auto p-8 text-gray-300">
+            <div className="flex-none" style={{ height: '60vh' }}>
+                {' '}
+                {/* Prevent stretching */}
+                <OrbitYearScene />
+            </div>
+
+            <main className="flex-1 overflow-y-auto px-8 pt-20 pb-12 space-y-12 text-gray-300">
                 <div className="max-w-6xl mx-auto space-y-12">
                     {/* Header Section */}
                     <div className="space-y-4">
