@@ -108,7 +108,7 @@ function MissionOverviewPage() {
                                 </h3>
                                 <ul className="space-y-2">
                                     <li>
-                                        • Launch: October 12, 2023 (Falcon
+                                        • Launch: October 13, 2023 (Falcon
                                         Heavy)
                                     </li>
                                     <li>• Mars Flyby: 2026 Gravity Assist</li>

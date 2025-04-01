@@ -81,63 +81,176 @@ function LearnMorePage() {
                     </section>
 
                     {/* Research Sources */}
+                    {/* Research Sources */}
                     <section className="space-y-6">
                         <h2 className="text-3xl font-bold border-b border-gray-700 pb-2">
                             Academic Sources
                         </h2>
                         <ol className="list-decimal pl-6 space-y-4 text-sm">
                             <li>
-                                Bierson, C. J., et al. (2022). Psyche Surface
-                                Temperatures...
+                                <a
+                                    href="https://www.jpl.nasa.gov/press-kits/psyche/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                                >
+                                    NASA (2023). Psyche Press Kit
+                                </a>
                             </li>
                             <li>
-                                Cambioni, S., et al. (2022). Heterogeneous
-                                Surface of Asteroid...
+                                <a
+                                    href="https://iopscience.iop.org/article/10.3847/PSJ/ac83a7"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                                >
+                                    Bierson, C. J., et al. (2022). The Geologic
+                                    Impact of 16 Psyche's Surface Temperatures
+                                </a>
                             </li>
                             <li>
-                                Dibb, S. D., et al. (2022). Spectral reflectance
-                                variations...
+                                <a
+                                    href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021JE007091"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                                >
+                                    Cambioni, S., et al. (2022). The
+                                    Heterogeneous Surface of Asteroid (16)
+                                    Psyche
+                                </a>
                             </li>
                             <li>
-                                Dibb, S. D., et al. (2023). Visible to
-                                Near-Infrared...
+                                <a
+                                    href="https://onlinelibrary.wiley.com/doi/10.1111/maps.13891"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                                >
+                                    Dibb, S. D., et al. (2022). Spectral
+                                    reflectance variations of aubrites,
+                                    metal-rich meteorites, and sulfides:
+                                    Implications for exploration of (16) Psyche
+                                    and other “spectrally featureless” asteroids
+                                </a>
                             </li>
                             <li>
-                                Dibb, S. D., et al. (2024). Post‐Launch Science
-                                Investigations...
+                                <a
+                                    href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EA002694"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                                >
+                                    Dibb, S. D., et al. (2023). Visible to
+                                    Near-Infrared Reflectance Spectroscopy of
+                                    Asteroid (16) Psyche: Implications for the
+                                    Psyche Mission's Science Investigations
+                                </a>
                             </li>
                             <li>
-                                Elkins-Tanton, L., et al. (2019). Psyche
-                                Possible Geometries...
+                                <a
+                                    href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2023AV001077"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                                >
+                                    Dibb, S. D., et al. (2024). A Post‐Launch
+                                    Summary of the Science of NASA's Psyche
+                                    Mission
+                                </a>
                             </li>
                             <li>
-                                Elkins-Tanton, L. T., et al. (2020).
-                                Observations, meteorites...
+                                <a
+                                    href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019JE006296"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                                >
+                                    Elkins-Tanton, L. T., et al. (2020).
+                                    Observations, Meteorites, and Models: A
+                                    Preflight Assessment of the Composition and
+                                    Formation of (16) Psyche
+                                </a>
                             </li>
                             <li>
-                                Elkins-Tanton, L. T., et al. (2022).
-                                Distinguishing formation scenarios...
+                                <a
+                                    href="https://link.springer.com/article/10.1007/s11214-022-00880-9"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                                >
+                                    Elkins-Tanton, L. T., et al. (2022).
+                                    Distinguishing the Origin of Asteroid (16)
+                                    Psyche
+                                </a>
                             </li>
                             <li>
-                                Jaumann, R., et al. (2022). The Psyche
-                                topography...
+                                <a
+                                    href="https://link.springer.com/article/10.1007/s11214-022-00874-7"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                                >
+                                    Jaumann, R., et al. (2022). The Psyche
+                                    Topography and Geomorphology Investigation
+                                </a>
                             </li>
                             <li>
-                                Marchi, S., et al. (2022). Determining the
-                                relative cratering ages...
+                                <a
+                                    href="https://link.springer.com/article/10.1007/s11214-022-00891-6"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                                >
+                                    Marchi, S., et al. (2022). Determining the
+                                    Relative Cratering Ages of Regions of
+                                    Psyche’s Surface
+                                </a>
                             </li>
-                            <li>Shepard, M. K. Radar observations...</li>
                             <li>
-                                Shepard, M. K., et al. (2021). Asteroid (16)
-                                Psyche: A Global Shape Model...
+                                <a
+                                    href="https://www.sciencedirect.com/science/article/abs/pii/S0019103516300288?via%3Dihub"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                                >
+                                    Shepard, M. K., et al. (2016) Radar
+                                    observations and shape model of asteroid 16
+                                    Psyche
+                                </a>
                             </li>
                             <li>
-                                Weiss, B. P., et al. (2023). The Psyche
-                                magnetometry investigation...
+                                <a
+                                    href="https://iopscience.iop.org/article/10.3847/PSJ/abfdba"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                                >
+                                    Shepard, M. K., et al. (2021). Asteroid 16
+                                    Psyche: Shape, Features, and Global Map
+                                </a>
                             </li>
                             <li>
-                                Zuber, M. T., et al. (2022). The Psyche gravity
-                                investigation...
+                                <a
+                                    href="https://link.springer.com/article/10.1007/s11214-023-00965-z"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                                >
+                                    Weiss, B. P., et al. (2023). The Psyche
+                                    Magnetometry Investigation
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://link.springer.com/article/10.1007/s11214-022-00905-3"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                                >
+                                    Zuber, M. T., et al. (2022). The Psyche
+                                    Gravity Investigation
+                                </a>
                             </li>
                         </ol>
                     </section>
@@ -148,10 +261,36 @@ function LearnMorePage() {
                             Additional Resources
                         </h2>
                         <ul className="list-disc pl-6 space-y-2">
-                            <li>[Link Title 1] - [URL Placeholder]</li>
-                            <li>[Link Title 2] - [URL Placeholder]</li>
-                            <li>[Link Title 3] - [URL Placeholder]</li>
-                            <li>[Link Title 4] - [URL Placeholder]</li>
+                            <li>
+                                <a
+                                    href="https://science.nasa.gov/mission/psyche/#:~:text=Psyche%20was%20discovered%20in%201852,a%20butterfly%2Dwinged%20female%20figure."
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                                >
+                                    NASA: Comprehensive Psyche Website
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://science.nasa.gov/mission/psyche/#:~:text=Psyche%20was%20discovered%20in%201852,a%20butterfly%2Dwinged%20female%20figure."
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                                >
+                                    NASA/ASU: Asteroid & Mission Info
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://psyche.asu.edu/gallery/psyche-asteroid-rotation-animation/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                                >
+                                    NASA/ASU: Psyche Rotation Animation
+                                </a>
+                            </li>
                         </ul>
                     </section>
 

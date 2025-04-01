@@ -5,10 +5,10 @@ function EnterButton() {
 
     return (
         <button
-            className="w-60 bg-black text-white rounded-full text-3xl px-3 py-3 border-4 border-gray-500 hover:bg-gray-500 transition"
+            className="font-mono text-gray-400 hover:text-gray-300 transition-colors bg-black px-6 py-3 rounded-lg border-2 border-gray-600 hover:border-gray-400 text-xl"
             onClick={() => navigate('/mission-overview')}
         >
-            Enter
+            ▷ ENTER SIMULATION
         </button>
     );
 }
