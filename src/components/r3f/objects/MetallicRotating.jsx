@@ -8,8 +8,7 @@ export default function MetallicRotating() {
 
     // Adjusted rotation speed (4.196 hours per rotation)
     useFrame((state, delta) => {
-        meshRef.current.rotation.x +=
-            delta * (Math.PI / (4.196 * 3600)) * 10000;
+        meshRef.current.rotation.z -= delta * (Math.PI / (4.196 * 3600)) * 2000;
     });
 
     return (

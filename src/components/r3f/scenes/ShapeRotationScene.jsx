@@ -1,8 +1,7 @@
 import { Suspense, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, Html, Line, useGLTF } from '@react-three/drei';
+import { OrbitControls, Html, Line, useGLTF, Stars } from '@react-three/drei';
 import MetallicRotating from '../objects/MetallicRotating';
-import Skybox from '../objects/Skybox';
 
 export default function ShapeRotationScene() {
     return (
@@ -30,7 +29,7 @@ export default function ShapeRotationScene() {
                         minDistance={4}
                         maxDistance={10}
                     />
-                    <Skybox></Skybox>
+                    <Stars radius={100} depth={50} count={2000} factor={4} />
                 </Suspense>
             </Canvas>
         </div>

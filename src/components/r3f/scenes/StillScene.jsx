@@ -1,9 +1,8 @@
 import { Suspense, useState } from 'react';
 import { Canvas, useThree } from '@react-three/fiber';
-import { OrbitControls, Html } from '@react-three/drei';
+import { OrbitControls, Html, Stars } from '@react-three/drei';
 import { MetallicStill } from '../objects/MetallicStill';
 import { Spacecraft } from '../objects/Spacecraft';
-import SkyBox from '../objects/Skybox';
 
 function CameraController({ showSpacecraft }) {
     const { camera, controls } = useThree();
@@ -31,13 +30,12 @@ export default function StillScene() {
                 camera={{ fov: 50 }}
             >
                 <Suspense fallback={null}>
-                    {/* Add CameraController inside Canvas */}
                     <CameraController showSpacecraft={showSpacecraft} />
 
                     <ambientLight intensity={1} />
                     <directionalLight color="white" position={[0, 0, 5]} />
                     <directionalLight color="white" position={[0, 0, -5]} />
-                    <SkyBox />
+                    <Stars radius={100} depth={50} count={2000} factor={4} />
 
                     {showSpacecraft ? <Spacecraft /> : <MetallicStill />}
 
