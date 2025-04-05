@@ -1,4 +1,5 @@
 import Topbar from '../components/util/Topbar';
+import DualLineChart from '../components/graphs/DualLineChart';
 
 function ImpactPage() {
     return (
@@ -165,6 +166,7 @@ function ImpactPage() {
                                 </span>
                             </li>
                         </ul>
+                        <DualLineChart />
                     </section>
 
                     {/* Orbital Characteristics */}
