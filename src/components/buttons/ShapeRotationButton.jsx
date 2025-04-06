@@ -5,7 +5,7 @@ function ShapeRotationButton() {
 
     return (
         <button
-            className="text-gray-400 font-mono bg-black text-md hover:text-gray-300 transition"
+            className="text-gray-400 font-mono bg-black text-sm hover:text-gray-300 transition"
             onClick={() => navigate('/shape-rotation')}
         >
             Shape and Rotation

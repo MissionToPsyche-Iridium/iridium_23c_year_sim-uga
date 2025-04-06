@@ -7,6 +7,7 @@ import OrbitYearPage from './pages/OrbitYearPage';
 import SCCPage from './pages/SCCPage';
 import ImpactPage from './pages/ImpactPage';
 import LearnMorePage from './pages/LearnMorePage';
+import ChatbotPage from './pages/ChatbotPage';
 
 function App() {
     return (
@@ -28,6 +29,9 @@ function App() {
                 <Route path="/orbit-year" element={<OrbitYearPage />}></Route>
                 <Route path="/scc" element={<SCCPage />}></Route>
                 <Route path="/impact" element={<ImpactPage />}></Route>
+                <Route path="/chatbot" element={<ChatbotPage />}>
+                    {' '}
+                </Route>
                 <Route path="/learn-more" element={<LearnMorePage />}></Route>
             </Routes>
         </Router>

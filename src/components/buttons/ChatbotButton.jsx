@@ -1,16 +1,16 @@
 import { useNavigate } from 'react-router-dom';
 
-function OrbitYearButton() {
+function ChatbotButton() {
     const navigate = useNavigate();
 
     return (
         <button
             className="text-gray-400 font-mono bg-black text-sm hover:text-gray-300 transition"
-            onClick={() => navigate('/orbit-year')}
+            onClick={() => navigate('/chatbot')}
         >
-            Orbit and Year
+            Chatbot
         </button>
     );
 }
 
-export default OrbitYearButton;
+export default ChatbotButton;

@@ -8,6 +8,7 @@ import OrbitYearButton from '../buttons/OrbitYearButton';
 import SCCButton from '../buttons/SCCButton';
 import ImpactButton from '../buttons/ImpactButton';
 import LearnMoreButton from '../buttons/LearnMoreButton';
+import ChatbotButton from '../buttons/ChatbotButton';
 
 function Topbar() {
     const navigate = useNavigate();
@@ -33,7 +34,7 @@ function Topbar() {
                 </div>
 
                 {/* Navigation Buttons */}
-                <div className="flex items-center ml-5">
+                <div className="flex items-center ml-20">
                     <MissionOverviewButton />
                     <div className="h-6 border-r border-gray-700 mx-3"></div>
                     <ShapeRotationButton />
@@ -43,6 +44,8 @@ function Topbar() {
                     <SCCButton />
                     <div className="h-6 border-r border-gray-700 mx-3"></div>
                     <ImpactButton />
+                    <div className="h-6 border-r border-gray-700 mx-3"></div>
+                    <ChatbotButton />
                     <div className="h-6 border-r border-gray-700 mx-3"></div>
                     <LearnMoreButton />
                 </div>
