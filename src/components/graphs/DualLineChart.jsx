@@ -33,14 +33,15 @@ const DualLineChart = () => {
     setCombinedData(combined);
   }, []);
   
+  // Updated to include year in date format
   const formatDate = (dateStr) => {
     const date = new Date(dateStr);
-    return `${date.getMonth() + 1}/${date.getDate()}`;
+    return `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
   };
   
   return (
     <div className="p-6 bg-white rounded-lg shadow-lg">
-      <h2 className="text-xl font-semibold mb-4 text-gray-800">Temperature Data Comparison</h2>
+      <h2 className="text-xl font-semibold mb-4 text-gray-800">Seasonal Temperature Variations on 16 Psyche’s Surface</h2>
       <div className="h-96">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
@@ -52,6 +53,10 @@ const DualLineChart = () => {
               dataKey="date" 
               tickFormatter={formatDate}
               tick={{ fill: '#6b7280' }}
+              angle={-45}
+              textAnchor="end"
+              height={80}
+              interval="preserveStartEnd"
             />
             <YAxis 
               tick={{ fill: '#6b7280' }}
@@ -59,8 +64,9 @@ const DualLineChart = () => {
               allowDataOverflow={false}
             />
             <Tooltip 
-              labelFormatter={(label) => `Date: ${label}`}
+              labelFormatter={(label) => `Date: ${formatDate(label)}`}
               contentStyle={{ backgroundColor: '#f3f4f6', borderRadius: '0.375rem', border: 'none' }}
+              cursor={{ strokeWidth: 2, stroke: '#9ca3af' }}
             />
             <Legend />
             <Line
@@ -68,9 +74,9 @@ const DualLineChart = () => {
               dataKey="value1"
               stroke="#2563eb"
               strokeWidth={2}
-              dot={{ fill: '#2563eb', r: 4 }}
-              activeDot={{ r: 6 }}
-              name="Positive Temps"
+              dot={false}
+              activeDot={{ r: 6, fill: '#2563eb', stroke: '#fff', strokeWidth: 2 }}
+              name="90° Latitude Temperatures"
               connectNulls
             />
             <Line
@@ -78,9 +84,9 @@ const DualLineChart = () => {
               dataKey="value2"
               stroke="#dc2626"
               strokeWidth={2}
-              dot={{ fill: '#dc2626', r: 4 }}
-              activeDot={{ r: 6 }}
-              name="Negative Temps"
+              dot={false}
+              activeDot={{ r: 6, fill: '#dc2626', stroke: '#fff', strokeWidth: 2 }}
+              name="-90° Latitude Temperatures"
               connectNulls
             />
           </LineChart>
