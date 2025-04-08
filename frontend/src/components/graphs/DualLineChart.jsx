@@ -41,7 +41,7 @@ const DualLineChart = () => {
   
   return (
     <div className="p-6 bg-white rounded-lg shadow-lg">
-      <h2 className="text-xl font-semibold mb-4 text-gray-800">Seasonal Temperature Variations on 16 Psyche’s Surface</h2>
+      <h2 className="text-xl font-semibold mb-4 text-gray-800">Estimated Seasonal Temperature Variations on 16 Psyche’s Surface</h2>
       <div className="h-96">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
@@ -73,9 +73,9 @@ const DualLineChart = () => {
               type="monotone"
               dataKey="value1"
               stroke="#2563eb"
-              strokeWidth={2}
+              strokeWidth={6}
               dot={false}
-              activeDot={{ r: 6, fill: '#2563eb', stroke: '#fff', strokeWidth: 2 }}
+              activeDot={{ r: 6, fill: '#2563eb', stroke: '#fff', strokeWidth: 6 }}
               name="90° Latitude Temperatures"
               connectNulls
             />
@@ -83,9 +83,9 @@ const DualLineChart = () => {
               type="monotone"
               dataKey="value2"
               stroke="#dc2626"
-              strokeWidth={2}
+              strokeWidth={6}
               dot={false}
-              activeDot={{ r: 6, fill: '#dc2626', stroke: '#fff', strokeWidth: 2 }}
+              activeDot={{ r: 6, fill: '#dc2626', stroke: '#fff', strokeWidth: 6 }}
               name="-90° Latitude Temperatures"
               connectNulls
             />
