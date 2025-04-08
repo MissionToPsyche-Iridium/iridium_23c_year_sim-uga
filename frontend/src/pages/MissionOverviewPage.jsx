@@ -1,7 +1,12 @@
+import { useEffect } from 'react';
 import Topbar from '../components/util/Topbar';
 import StillScene from '../components/r3f/scenes/StillScene';
 
 function MissionOverviewPage() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="flex flex-col bg-gray-900 font-mono">
             <Topbar />
