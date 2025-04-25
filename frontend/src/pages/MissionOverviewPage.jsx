@@ -1,6 +1,11 @@
 import { useEffect } from 'react';
 import Topbar from '../components/util/Topbar';
 import StillScene from '../components/r3f/scenes/StillScene';
+import dsocImage from '../assets/images/DSOC.png';
+import grnsImage from '../assets/images/GRNS.png';
+import magImage from '../assets/images/MAG.png';
+import multiImage from '../assets/images/MULTISPECTRAL.png';
+
 
 function MissionOverviewPage() {
     useEffect(() => {
@@ -151,18 +156,33 @@ function MissionOverviewPage() {
                                     Multispectral Imager
                                 </h3>
                                 <p className="text-gray-400">
-                                    Dual-camera system for geological mapping
-                                    and composition analysis
+                                    Dual-camera system for geology & composition analysis
                                 </p>
+                                <img 
+                                    src={multiImage}
+                                    alt="Magnetometer Instrument"
+                                    className="w-full rounded-md mt-3 h-72"
+                                />
+                                <p className="text-gray-500">
+                                    Image credit: NASA/Jet Propulsion Laboratory
+                                </p>                                
                             </div>
                             <div className="p-4 border border-gray-700 rounded-lg">
                                 <h3 className="text-xl font-semibold mb-2">
                                     GRNS
                                 </h3>
                                 <p className="text-gray-400">
-                                    Gamma Ray and Neutron Spectrometer for
+                                    Gamma-Ray and Neutron Spectrometer for
                                     elemental detection
                                 </p>
+                                <img 
+                                    src={grnsImage}
+                                    alt="Magnetometer Instrument"
+                                    className="w-full rounded-md mt-3 h-72"
+                                />
+                                <p className="text-gray-500">
+                                    Image credit: NASA/Jet Propulsion Laboratory
+                                </p>                                
                             </div>
                             <div className="p-4 border border-gray-700 rounded-lg">
                                 <h3 className="text-xl font-semibold mb-2">
@@ -172,6 +192,14 @@ function MissionOverviewPage() {
                                     High-sensitivity field detection (MIT/DTU
                                     collaboration)
                                 </p>
+                                <img 
+                                    src={magImage}
+                                    alt="Magnetometer Instrument"
+                                    className="w-full rounded-md mt-3 h-72"
+                                />
+                                <p className="text-gray-500">
+                                    Image credit: NASA/Jet Propulsion Laboratory
+                                </p>                                
                             </div>
                             <div className="p-4 border border-gray-700 rounded-lg">
                                 <h3 className="text-xl font-semibold mb-2">
@@ -181,6 +209,14 @@ function MissionOverviewPage() {
                                     Deep Space Optical Communications technology
                                     demonstrator
                                 </p>
+                                <img 
+                                    src={dsocImage}
+                                    alt="DSOC Technology"
+                                    className="w-full rounded-md mt-3 h-72"
+                                />
+                                <p className="text-gray-500">
+                                    Image credit: NASA/JPL-Caltech
+                                </p>                                
                             </div>
                         </div>
                     </section>

@@ -1,5 +1,10 @@
 import Topbar from '../components/util/Topbar';
+import { useEffect } from 'react';
 import ShapeRotationScene from '../components/r3f/scenes/ShapeRotationScene';
+import internalImage from '../assets/images/INTERNAL.png';
+import topographyImage from '../assets/images/TOPOGRAPHY.png';
+import impactImage from '../assets/images/IMPACT_HISTORY.png';
+import thermalImage from '../assets/images/THERMAL.png';
 
 function ShapeRotationPage() {
     return (
@@ -156,28 +161,22 @@ function ShapeRotationPage() {
                                         Internal Structure Insights
                                     </h3>
                                     <p className="leading-relaxed">
-                                        Combined shape-gravity analysis will
-                                        reveal density variations critical for
+                                        Combined shape-gravity analysis 
+                                        reveals density variations critical for
                                         determining core formation history.
                                         Radial density patterns could confirm
                                         differentiation processes.
                                     </p>
+                                    <img 
+                                        src={internalImage}
+                                        alt="Internal Structure Visualization"
+                                        className="w-full rounded-md mt-3"
+                                    />
+                                <p className="text-gray-500">
+                                    Image credit: Elkins-Tanton et. al: Distinguishing the Origin of Asteroid (16) Psyche
+                                </p>                                      
                                 </div>
 
-                                <div className="p-4 border border-gray-700 rounded-lg">
-                                    <h3 className="text-xl font-semibold mb-2">
-                                        Impact History
-                                    </h3>
-                                    <p className="leading-relaxed">
-                                        Crater morphology analysis on metallic
-                                        surfaces may show unique depth-diameter
-                                        ratios compared to rocky bodies,
-                                        informing collision models.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="space-y-4">
                                 <div className="p-4 border border-gray-700 rounded-lg">
                                     <h3 className="text-xl font-semibold mb-2">
                                         Surface Processes
@@ -188,6 +187,36 @@ function ShapeRotationPage() {
                                         and volcanic remnants unique to
                                         metal-rich worlds.
                                     </p>
+                                    <img 
+                                        src={topographyImage}
+                                        alt="Internal Structure Visualization"
+                                        className="w-full rounded-md mt-3 h-72"
+                                    />
+                                <p className="text-gray-500">
+                                    Image credit: Shepard et. al: Asteroid 16 Psyche: Shape, Features, and Global Map
+                                </p>                                      
+                                </div>
+                            </div>
+
+                            <div className="space-y-4">
+                                <div className="p-4 border border-gray-700 rounded-lg">
+                                    <h3 className="text-xl font-semibold mb-2">
+                                        Impact History
+                                    </h3>
+                                    <p className="leading-relaxed">
+                                        Crater morphology analysis on metallic
+                                        surfaces may show unique depth-diameter
+                                        ratios compared to rocky bodies,
+                                        informing collision models.
+                                    </p>
+                                    <img 
+                                        src={impactImage}
+                                        alt="Internal Structure Visualization"
+                                        className="w-full rounded-md mt-3"
+                                    />
+                                <p className="text-gray-500">
+                                    Image credit: Shepard et. al: Radar Observations and Shape Model of Asteroid 16 Psyche
+                                </p>                                      
                                 </div>
 
                                 <div className="p-4 border border-gray-700 rounded-lg">
@@ -200,6 +229,14 @@ function ShapeRotationPage() {
                                         formation through thermal fracturing of
                                         metallic surface material.
                                     </p>
+                                    <img 
+                                        src={thermalImage}
+                                        alt="Internal Structure Visualization"
+                                        className="w-full rounded-md mt-3 h-64"
+                                    />
+                                <p className="text-gray-500">
+                                    Image credit: Cambioni et. al: The Heterogeneous Surface of Asteroid (16) Psyche
+                                </p>                                      
                                 </div>
                             </div>
                         </div>

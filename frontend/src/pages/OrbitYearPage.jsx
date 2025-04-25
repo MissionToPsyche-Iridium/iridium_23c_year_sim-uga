@@ -1,5 +1,11 @@
 import Topbar from '../components/util/Topbar';
 import OrbitYearScene from '../components/r3f/scenes/OrbitYearScene';
+import { useEffect } from 'react';
+import formationImage from '../assets/images/YA_EFFECT.png';
+import collisionImage from '../assets/images/CRATER.png';
+import diffImage from '../assets/images/Differentiation.png';
+import thermalImage from '../assets/images/ENVIRONMENT.png';
+
 
 function OrbitYearPage() {
     return (
@@ -169,6 +175,11 @@ function OrbitYearPage() {
                                         <li>Yarkovsky effect measurements</li>
                                         <li>Planetesimal migration models</li>
                                     </ul>
+                                    <img 
+                                        src={formationImage}
+                                        alt="Formation Constraints Visualization"
+                                        className="w-full rounded-md mt-3"
+                                    />                                    
                                 </div>
 
                                 <div className="p-4 border border-gray-700 rounded-lg">
@@ -185,6 +196,11 @@ function OrbitYearPage() {
                                         , influencing material properties and
                                         observation strategies.
                                     </p>
+                                    <img 
+                                        src={thermalImage}
+                                        alt="Formation Constraints Visualization"
+                                        className="w-full rounded-md mt-3"
+                                    />                                    
                                 </div>
                             </div>
 
@@ -204,7 +220,13 @@ function OrbitYearPage() {
                                             Preservation of ancient features
                                         </li>
                                         <li>Unique crater scaling laws</li>
+                                        <li>Stripping of layers through impacts</li>
                                     </ul>
+                                    <img 
+                                        src={collisionImage}
+                                        alt="Formation Constraints Visualization"
+                                        className="w-full rounded-md mt-3"
+                                    />                                    
                                 </div>
 
                                 <div className="p-4 border border-gray-700 rounded-lg">
@@ -220,6 +242,11 @@ function OrbitYearPage() {
                                         <li>Post-formation disruptions</li>
                                         <li>Radioisotope decay signatures</li>
                                     </ul>
+                                    <img 
+                                        src={diffImage}
+                                        alt="Formation Constraints Visualization"
+                                        className="w-full rounded-md mt-3"
+                                    />                                    
                                 </div>
                             </div>
                         </div>
