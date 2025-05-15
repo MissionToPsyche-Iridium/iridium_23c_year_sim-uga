@@ -29,9 +29,9 @@ function App() {
                 <Route path="/orbit-year" element={<OrbitYearPage />}></Route>
                 <Route path="/scc" element={<SCCPage />}></Route>
                 <Route path="/impact" element={<ImpactPage />}></Route>
-                <Route path="/chatbot" element={<ChatbotPage />}>
+                {/* <Route path="/chatbot" element={<ChatbotPage />}>
                     {' '}
-                </Route>
+                </Route> */}
                 <Route path="/learn-more" element={<LearnMorePage />}></Route>
             </Routes>
         </Router>

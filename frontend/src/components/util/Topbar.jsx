@@ -44,8 +44,8 @@ function Topbar() {
                     <SCCButton />
                     <div className="h-6 border-r border-gray-700 mx-3"></div>
                     <ImpactButton />
-                    <div className="h-6 border-r border-gray-700 mx-3"></div>
-                    <ChatbotButton />
+                    {/* <div className="h-6 border-r border-gray-700 mx-3"></div> */}
+                    {/* <ChatbotButton /> */}
                     <div className="h-6 border-r border-gray-700 mx-3"></div>
                     <LearnMoreButton />
                 </div>
