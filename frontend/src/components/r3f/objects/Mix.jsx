@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { useGLTF } from '@react-three/drei';
 
 export function Mix(props) {
-    const { nodes, materials } = useGLTF('/psyche-mix.glb');
+    const { nodes, materials } = useGLTF('/iridium_23c_year_sim-uga/psyche-mix.glb');
     return (
         <group {...props} dispose={null}>
             <mesh
@@ -15,4 +15,4 @@ export function Mix(props) {
     );
 }
 
-useGLTF.preload('/psyche-mix.glb');
+useGLTF.preload('/iridium_23c_year_sim-uga/psyche-mix.glb');

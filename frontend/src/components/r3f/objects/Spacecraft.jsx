@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { useGLTF } from '@react-three/drei';
 
 export function Spacecraft(props) {
-    const { nodes, materials } = useGLTF('/psyche-spacecraft.glb');
+    const { nodes, materials } = useGLTF('/iridium_23c_year_sim-uga/psyche-spacecraft.glb');
     return (
         <group {...props} dispose={null}>
             <mesh
@@ -15,4 +15,4 @@ export function Spacecraft(props) {
     );
 }
 
-useGLTF.preload('/psyche-spacecraft.glb');
+useGLTF.preload('/iridium_23c_year_sim-uga/psyche-spacecraft.glb');

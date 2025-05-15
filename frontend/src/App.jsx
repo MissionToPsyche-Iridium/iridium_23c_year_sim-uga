@@ -11,7 +11,7 @@ import ChatbotPage from './pages/ChatbotPage';
 
 function App() {
     return (
-        <Router>
+        <Router basename="/iridium_23c_year_sim-uga">
             <Routes>
                 <Route path="/" element={<LandingPage />}></Route>
                 <Route

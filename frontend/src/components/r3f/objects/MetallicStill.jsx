@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { useGLTF } from '@react-three/drei';
 
 export function MetallicStill(props) {
-    const { nodes, materials } = useGLTF('/psyche-metallic.glb');
+    const { nodes, materials } = useGLTF('/iridium_23c_year_sim-uga/psyche-metallic.glb');
     return (
         <group {...props} dispose={null}>
             <mesh
@@ -15,4 +15,4 @@ export function MetallicStill(props) {
     );
 }
 
-useGLTF.preload('/psyche-metallic.glb');
+useGLTF.preload('/iridium_23c_year_sim-uga/psyche-metallic.glb');

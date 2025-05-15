@@ -5,4 +5,5 @@ import tailwindcss from '@tailwindcss/vite';
 // https://vite.dev/config/
 export default defineConfig({
     plugins: [react(), tailwindcss()],
+    base: '/iridium_23c_year_sim-uga/'
 });

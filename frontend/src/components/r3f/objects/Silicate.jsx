@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { useGLTF } from '@react-three/drei';
 
 export function Silicate(props) {
-    const { nodes, materials } = useGLTF('/psyche-silicate.glb');
+    const { nodes, materials } = useGLTF('/iridium_23c_year_sim-uga/psyche-silicate.glb');
     return (
         <group {...props} dispose={null}>
             <mesh
@@ -15,4 +15,4 @@ export function Silicate(props) {
     );
 }
 
-useGLTF.preload('/psyche-silicate.glb');
+useGLTF.preload('/iridium_23c_year_sim-uga/psyche-silicate.glb');

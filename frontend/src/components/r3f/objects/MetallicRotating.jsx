@@ -4,7 +4,7 @@ import { useRef } from 'react';
 
 export default function MetallicRotating() {
     const meshRef = useRef();
-    const { nodes } = useGLTF('/psyche-metallic.glb');
+    const { nodes } = useGLTF('/iridium_23c_year_sim-uga/psyche-metallic.glb');
 
     // Adjusted rotation speed (4.196 hours per rotation)
     useFrame((state, delta) => {

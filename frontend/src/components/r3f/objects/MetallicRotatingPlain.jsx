@@ -4,7 +4,7 @@ import { useRef } from 'react';
 
 export default function MetallicRotatingPlain(props) {
     const meshRef = useRef();
-    const { nodes } = useGLTF('/psyche-metallic.glb');
+    const { nodes } = useGLTF('/iridium_23c_year_sim-uga/psyche-metallic.glb');
 
     useFrame((state, delta) => {
         meshRef.current.rotation.z -= delta * (Math.PI / (4.196 * 3600)) * 2000;
